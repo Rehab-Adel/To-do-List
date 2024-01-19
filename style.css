@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Patrick Hand", cursive;
+    font-style: normal;
+}
+body
+{
+    width: 100%;
+    background-image: url("./Images/background.jpg");
+    background-attachment: fixed;    
+}
+::selection
+{
+    background-color: #CD4719;
+    color: #ffe17e;
+}
+.todo-container{
+    width: 700px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #FFD859;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 10px 5px 50px #252525;
+}
+#add-form
+{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+#todo-input
+{
+    padding: 5px 10px;
+    width: 75%;
+    border-radius: 15px;
+    border: 1px solid #ffda60;
+}
+#todo-input:focus
+{
+    box-shadow: 1px 2px 3px #808080 inset;
+}
+input[type=text] {
+    font-size: large;
+}
+input[type=text]:focus {
+    outline: 2px solid #fcc100;
+}
+
+#todo-btn
+{
+    width: 25%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: #CD4719;
+    color: #fff2c7;
+    border: none;
+    transition: 100ms ease-in-out;
+    font-size: larger;
+}
+#todo-btn:hover{
+    transform: scale(1.0);
+    background-color: #a43712;
+}
+
+.boxes-container
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.box{
+    border: 2px solid #CD4719;
+    padding: 15px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.task
+{
+    background-color: #CD4719;
+    color: #ffe17e;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 5px;
+    cursor: move;
+    font-size: large;
+
+}
+.task.is-dragging
+{
+    background-color: #a43712;
+    color: #ffe17e;
+}
+.heading
+{
+    color: #571f0c;
+
+}

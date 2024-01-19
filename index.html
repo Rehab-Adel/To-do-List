@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <form id="add-form" action="">
+            <input type="text" placeholder="Add new task ^^" id="todo-input">
+            <button type="submit" id="todo-btn">Add+</button>
+        </form>
+
+        <div class="boxes-container">
+            <!--TODO BOX-->
+            <div class="box" id="to-do">
+                <h2 class="heading">TODO</h2>
+                
+            </div>
+
+            <!--PROGRESS BOX-->
+            <div class="box" id="doing">
+                <h2 class="heading">PROGRESS</h2>
+            </div>
+
+            <!--DONE BOX-->
+            <div class="box" id="done">
+                <h2 class="heading">DONE</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
